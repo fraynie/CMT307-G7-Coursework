@@ -26,4 +26,4 @@ From this data we can build the CNN (starting on line 70). I've only done a basi
 
 The basic CNN I've created provides about 35% accuracy after 6 epochs - we should be able to improve this...
 
-![Model accuracy](images\Figure_1.png)
+![Model accuracy](https://github.com/fraynie/CMT307-G7-Coursework/blob/master/images/Figure_1.png)
