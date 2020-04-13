@@ -4,8 +4,19 @@
 
 The first file **load_image_data.py** imports the data into a #4D array containing a 100x100 pixel image with depth = 3 visible wave lenghts (RGB) value for each image in the training set, together with the labels: 'amusement', 'anger', 'awe', etc.
 
-Tha data is saved into two pickle files: **X_data.pickle** and **y_data.pickle** which are also uploaded. Pickle files are a simple way of serialising the numpy arrays of training data into a file. There's no need to run the code in this file - just need to download these pickle file and create the data from these files as explained below - which takes no time at all.
-*NOTE: pickle files too large to upload to GitHib - download from <https://1drv.ms/u/s!AniRgLUlIrYtgdo-NmV3Ja2f9Dg07w?e=kAp7C4>*
+The size of the image files can be changed via the variable IMG_SIZE - e.g.:
+
+    IMG_SIZE = 150
+
+Tha data is saved into pickle files: **X_data.pickle** and **y_data.pickle** which are also uploaded. Pickle files are a simple way of serialising the numpy arrays of training data into a file. There's no need to run the code in this file - just need to download these pickle file and create the data from these files as explained below - which takes no time at all.
+*NOTE: pickle files too large to upload to GitHib - download from https://drive.google.com/drive/folders/1QLFdWRIwaXv_PX99BT9_g7A3WCprs03y?usp=sharing*
+
+The following files are available:
+* **X_data.pickle** and **y_data.pickle** are the files containing the original data set and labels
+* **X_data1.pickle** and **y_data1.pickle** contain the additional images files created via the image augmentation script. There are 5130 images for each category (41,040 images in total).
+* **X_data_150x150.pickle** and **y_data_150x150.pickle** contain the additional images files, but with the image size set to 150x150 pixels
+
+
 
 ## first_go.py
 
