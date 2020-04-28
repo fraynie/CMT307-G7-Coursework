@@ -59,23 +59,9 @@ The original data set included a small number of duplicate images. Also it is po
 
 This script checks for and removes duplicate images in each of our eight categories.
 
-## first_go.py
-
-The second file **first_go.py** unpacks the data from these pickle files using the following code *(Note: I've done this as a Python script because that's what I'm familiar with - I'll convert to a Jupyter notebook)*:
-
-    with open('X_data.pickle', 'rb') as f1:
-        X = pickle.load(f1)
-
-    with open('y_data.pickle', 'rb') as f2:
-        y = pickle.load(f2)`
-
-From these X and y variables we can then easily split the training data into training and testing data sets using the sklearn test_train_split utility as we have done in class
-
-    from sklearn.model_selection import train_test_split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33) 
-
-From this data we can build the CNN (starting on line 70). I've only done a basic CNN based on a simple example - but following this example we should be able to jointly work to create a better model based on what we've learnt in class.
-
-The basic CNN I've created provides about 35% accuracy after 6 epochs - we should be able to improve this...
-
-![Model accuracy](https://github.com/fraynie/CMT307-G7-Coursework/blob/master/images/Figure_1.png)
+## CNN Models
+The following Python scripts contain the models described in the report:
+* __cnn_v1.py__ - _this is the initial attempt_
+* __cnn_v2.py__ - _the enhanced CNN_
+* __cnn_v3_xception_final.py__ - _this is the final model described in the report base on the Xception pre-trained model_
+* __cnn_v3_xception_final.ipynb__ - _this is the final model as a Jupyter notebook_
